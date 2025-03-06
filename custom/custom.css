@@ -160,12 +160,3 @@
     /* 隐藏标题 */
   }
 }
-
-/*Style backdrop*/
-.backdropImage {
-  filter: blur(12px) saturate(120%) contrast(120%) brightness(40%);
-}
-
-.trackSelections {
-  max-width: 30.5em;
-}
