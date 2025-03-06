@@ -8,6 +8,10 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  margin-bottom: 20px;
+}
+
 .lnkMediaFolder.navMenuOption.emby-button {
   border-radius: var(--rounding) !important;
   margin: 10px !important;
@@ -44,6 +48,11 @@
   border: none !important;
 }
 
+.headerTabs {
+  transform: translateY(-5px);
+}
+
+
 /* 设置 emby-tabs-slider 的样式 */
 .emby-tabs-slider {
   display: inline-flex;
@@ -55,14 +64,32 @@
   /* 内边距统一为 5px */
   margin-left: 12px;
   margin-right: 10px;
-  background: rgba(255, 255, 255, 0.2);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.35);
   /* 半透明白色背景 */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   /* 毛玻璃模糊效果 */
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(50px);
   /* Safari 浏览器兼容 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   /* 阴影效果 */
+}
+
+@media (min-width: 1600px) {
+
+  .headerLeft,
+  .headerRight {
+    margin-top: 15px !important;
+  }
+
+  .emby-tabs-slider {
+    margin-top: 20px !important;
+  }
+
+  .headerTabs {
+    transform: translateY(0px) !important;
+  }
 }
 
 /* 设置按钮的基础样式 */
@@ -101,13 +128,13 @@
   /* 统一内边距 */
   border-radius: var(--rounding) !important;
   /* 圆角矩形 */
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.35);
   /* 半透明背景 */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   /* 毛玻璃效果 */
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(50px);
   /* 兼容 Safari */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   /* 轻微阴影效果 */
   margin-right: 10px;
   margin-left: 12px;
