@@ -1,0 +1,170 @@
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.lnkMediaFolder.navMenuOption.emby-button {
+  border-radius: var(--rounding) !important;
+  margin: 10px !important;
+  /* 外部间距，确保周围有空白 */
+}
+
+.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters {
+  border-radius: var(--rounding) !important;
+  margin: 10px !important;
+  /* 外部间距，确保周围有空白 */
+}
+
+.mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
+  scrollbar-width: none;
+  /* Firefox 隐藏滚动条 */
+  -ms-overflow-style: none;
+  /* IE 和 Edge 隐藏滚动条 */
+}
+
+.mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY::-webkit-scrollbar {
+  display: none;
+  /* Chrome、Safari 隐藏滚动条 */
+}
+
+.skinHeader,
+.focuscontainer-x,
+.skinHeader-withBackground,
+.skinHeader-blurred,
+.noHomeButtonHeader {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  border: none !important;
+}
+
+/* 设置 emby-tabs-slider 的样式 */
+.emby-tabs-slider {
+  display: inline-flex;
+  /* 改为 inline-flex，确保容器宽度根据按钮内容自动调整 */
+  justify-content: center;
+  /* 按钮居中显示 */
+  border-radius: var(--rounding) !important;
+  padding: 5px;
+  /* 内边距统一为 5px */
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-right: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  /* 半透明白色背景 */
+  backdrop-filter: blur(10px);
+  /* 毛玻璃模糊效果 */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari 浏览器兼容 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+}
+
+/* 设置按钮的基础样式 */
+.emby-tab-button {
+  border: none;
+  /* 去掉默认边框 */
+  padding: 10px;
+  /* 按钮内边距统一为 5px 上下，15px 左右 */
+  margin: 0 5px;
+  /* 按钮间隔设置为 5px */
+  cursor: pointer;
+  /* 鼠标指针样式 */
+  border-radius: var(--rounding) !important;
+}
+
+@media (pointer: fine) {
+  .emby-tab-button:hover {
+    background-color: rgba(var(--accent), 0.25) !important;
+    backdrop-filter: blur(4px);
+  }
+}
+
+/* 设置选中按钮的高亮效果 */
+.emby-tab-button-active {
+  background-color: rgba(var(--accent)) !important;
+}
+
+/* 统一 headerLeft 和 headerRight 的样式 */
+.headerLeft,
+.headerRight {
+  display: flex;
+  /* 保持按钮横向排列 */
+  align-items: center;
+  /* 垂直居中对齐 */
+  padding: 5px;
+  /* 统一内边距 */
+  border-radius: 9px;
+  /* 圆角矩形 */
+  background: rgba(255, 255, 255, 0.2);
+  /* 半透明背景 */
+  backdrop-filter: blur(10px);
+  /* 毛玻璃效果 */
+  -webkit-backdrop-filter: blur(10px);
+  /* 兼容 Safari */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* 轻微阴影效果 */
+  margin-right: 5px;
+  /* 外边距 */
+  margin-left: 8px;
+}
+
+.headerLeft {
+  display: inline-flex;
+  /* 保证容器宽度根据内容自适应 */
+  align-items: center;
+  min-width: max-content;
+  /* 确保按钮有最小宽度，避免过小 */
+  max-width: max-content;
+  width: auto;
+  /* 宽度根据内容自适应 */
+  overflow: hidden;
+  /* 隐藏溢出的内容 */
+}
+
+.headerRight {
+  margin-left: auto;
+  /* 自动填充左边的空间，将 .headerRight 推到右侧 */
+  display: inline-flex;
+  /* 保持右侧元素为 flex 布局 */
+  align-items: center;
+}
+
+.pageTitle,
+.pageTitleWithLogo,
+.pageTitleWithDefaultLogo {
+  white-space: nowrap;
+  /* 防止换行 */
+  padding-right: 10px;
+}
+
+.pageTitleWithDefaultLogo {
+  width: 100px;
+}
+
+/* 屏幕过小时隐藏标题 */
+@media (max-width: 500px) {
+
+  /* 根据实际需求调整宽度 */
+  .pageTitle,
+  .pageTitleWithLogo,
+  .pageTitleWithDefaultLogo {
+    display: none;
+    /* 隐藏标题 */
+  }
+}
+
+/*Style backdrop*/
+.backdropImage {
+  filter: blur(12px) saturate(120%) contrast(120%) brightness(40%);
+}
+
+.trackSelections {
+  max-width: 30.5em;
+}
