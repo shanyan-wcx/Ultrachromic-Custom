@@ -146,6 +146,7 @@
 
 .pageTitleWithDefaultLogo {
   width: 100px;
+  transform: translateX(-5px);
 }
 
 /* 屏幕过小时隐藏标题 */
