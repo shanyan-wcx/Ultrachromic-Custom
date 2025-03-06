@@ -53,9 +53,8 @@
   border-radius: var(--rounding) !important;
   padding: 5px;
   /* 内边距统一为 5px */
-  margin-top: 5px;
-  margin-left: 8px;
-  margin-right: 5px;
+  margin-left: 12px;
+  margin-right: 10px;
   background: rgba(255, 255, 255, 0.2);
   /* 半透明白色背景 */
   backdrop-filter: blur(10px);
@@ -100,7 +99,7 @@
   /* 垂直居中对齐 */
   padding: 5px;
   /* 统一内边距 */
-  border-radius: 9px;
+  border-radius: var(--rounding) !important;
   /* 圆角矩形 */
   background: rgba(255, 255, 255, 0.2);
   /* 半透明背景 */
@@ -110,9 +109,10 @@
   /* 兼容 Safari */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   /* 轻微阴影效果 */
-  margin-right: 5px;
-  /* 外边距 */
-  margin-left: 8px;
+  margin-right: 10px;
+  margin-left: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .headerLeft {
