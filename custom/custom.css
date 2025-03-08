@@ -187,3 +187,11 @@
     /* 隐藏标题 */
   }
 }
+
+.layout-mobile .itemBackdrop {
+    margin-top: 0rem;
+}
+
+.pageTitle:empty:not(.pageTitleWithLogo):not(.pageTitleWithDefaultLogo) {
+    display: none;
+}
